@@ -2,7 +2,7 @@ from url_srapper import getScrapedData
 from data_extractor import methods_tools_extracter, ingredients_extracter, nutrition_extracter
 from transformer import replace_instructions
 from transformation_list import healthy, vegetarian, to_vegan_list
-from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, ALL_FOOD, TOOLS, UNITS, DESCRIPTOR
+from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, UNITS, DESCRIPTOR
 
 food_link1 = "https://www.allrecipes.com/recipe/80827/easy-garlic-broiled-chicken"
 print("**********************************************************************************************")
@@ -18,7 +18,7 @@ nutrition = nutrition_extracter(scrapped_data)
 print(nutrition)
 
 print("**********************************************************************************************")
-methods = methods_tools_extracter(scrapped_data['directions'], PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, ALL_FOOD, TOOLS)
+methods = methods_tools_extracter(scrapped_data['directions'], ingredients, PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS)
 print(methods)
 
 print("**********************************************************************************************")

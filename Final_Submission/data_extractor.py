@@ -1,7 +1,16 @@
 import string
+from difflib import get_close_matches 
 
-def methods_tools_extracter(directions, PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, all_food, TOOLS):
+def methods_tools_extracter(directions, ingredients, PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS):
+    def get_food_from_ingredients(ingredients):
+        all_ingredient  = []
+        for each in ingredients:
+            if each.startswith('name'):
+                all_ingredient.append(ingredients[each])
+        return all_ingredient
     method = {}
+    times = ["minutes", "seconds", "hours"]
+    all_food = get_food_from_ingredients(ingredients)
     for e in directions:
         for j  in e.split("."):
             if "\n" in j:
@@ -10,33 +19,41 @@ def methods_tools_extracter(directions, PRIMARY_COOKING_METHODS, SECONDARY_COOKI
             method[j]["primary_method"] = []
             method[j]["seconary_method"] = []
             method[j]["tools"] = []
-            method[j]["ingredient"] = [] 
-
+            method[j]["ingredient"] = set() 
+            method[j]["time"] = [] 
+            num = 0
             for i in j.split(" "):
                 cur_word = i.lower()
                 cur_word = cur_word.strip(string.punctuation)
                 if cur_word in PRIMARY_COOKING_METHODS:
                     method[j]["primary_method"].append(cur_word)
                 elif cur_word in SECONDARY_COOKING_METHODS:
-                    method[j]["seconary_method"].append(cur_word)
-                elif cur_word in all_food:
-                    method[j]["ingredient"].append(cur_word)  
+                    method[j]["seconary_method"].append(cur_word)  
                 elif cur_word in TOOLS:
-                    method[j]["tools"].append(cur_word)                  
+                    method[j]["tools"].append(cur_word)  
+                elif is_number(cur_word):
+                    num = cur_word
+                elif cur_word.lower() in times:
+                    if int(num) > 0:
+                        method[j]["time"] = str(num) + " " + cur_word
+                        num = 0
+                ingre = get_close_matches(cur_word, all_food, 1, 0.2)
+                if ingre:  #cur_word in all_food:
+                    method[j]["ingredient"].add(ingre[0])
     return method
 
+def is_number(item):
+    try:
+        float(item)
+    except ValueError:
+        return False
+    return True
+
+def is_fraction(s):
+    values = s.split('/')
+    return len(values) == 2 and all(i.isdigit() for i in values)
+
 def ingredients_extracter(ingredient_raw_dict, descriptor, units):
-    def is_number(item):
-        try:
-            float(item)
-        except ValueError:
-            return False
-        return True
-
-    def is_fraction(s):
-        values = s.split('/')
-        return len(values) == 2 and all(i.isdigit() for i in values)
-
     ingredients ={}
     ingredient_list_raw = ingredient_raw_dict['ingredients']
     count=1
