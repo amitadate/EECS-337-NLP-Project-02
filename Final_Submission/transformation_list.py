@@ -236,3 +236,28 @@ to_vegan_list = {
     "bagel": "vegan bagel",
     "pancake": "vegan pancake"
 }
+
+normal_to_chinese = {
+    "olive oil": "peanut oil",
+    "spaghetti": "lo mein",
+    "vinegar": "black vinegar",
+    "red pepper flakes": "dried chili pepper",
+    "italian parsley": "cilantro",
+    "parmigiano-reggiano cheese": "fermented bean curd",
+    "penne": "lo mein",
+    "mushrooms": "shiitake mushrooms",
+    "salad": "Malatang",
+    "Quesadilla": "Xian Bing",
+    "Burger": "Chinese Hamburger",
+    "French pancake": "Jian Bing",
+    "Meat Sauce": "Da Lu Mian",
+    "Churro": "You Tiao",
+    "Pizza": "Scallion Pancake",
+    "wine": "shaojiu",
+    "pork": "tofu",
+    "chicken nuggets": "chicken balls",
+    "jerky": "Bak Kwa",
+    "pork": "Mapo Doufu",
+    "meat": "Bakkwa",
+    "lamb": "lamb broth",
+}

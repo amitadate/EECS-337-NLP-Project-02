@@ -1,10 +1,10 @@
 from url_srapper import getScrapedData
 from data_extractor import methods_tools_extracter, ingredients_extracter, nutrition_extracter
 from transformer import replace_instructions
-from transformation_list import healthy, vegetarian, to_vegan_list
+from transformation_list import healthy, vegetarian, to_vegan_list, normal_to_chinese
 from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, UNITS, DESCRIPTOR
 
-food_link1 = "https://www.allrecipes.com/recipe/80827/easy-garlic-broiled-chicken"
+food_link1 = "https://www.allrecipes.com/recipe/222000/spaghetti-aglio-e-olio"
 print("****************************************  Scrapped Data  ******************************************************")
 scrapped_data = getScrapedData(food_link1)
 print(scrapped_data)
@@ -42,4 +42,10 @@ print("****************************************** Transformed to Vegan *********
 transformed_vegan_method = replace_instructions(methods, to_vegan_list)
 print(' * ', end='')
 print("\n * ".join(transformed_vegan_method))
+print("\n\n")
+
+print("****************************************** Transformed to Chinese ****************************************************")
+transformed_chinese_method = replace_instructions(methods, normal_to_chinese)
+print(' * ', end='')
+print("\n * ".join(transformed_chinese_method))
 print("\n\n")
