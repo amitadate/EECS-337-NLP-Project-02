@@ -22,8 +22,11 @@ print("\n\n")
 
 print("******************************************** Methods **************************************************")
 methods = methods_tools_extracter(scrapped_data['directions'], ingredients, PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS)
-print(' * ', end='')
-print("\n * ".join(methods))
+print('', end='')
+for each in methods:
+    print("\n * ", each)
+    for e in methods[each]: 
+        print("   ", e, " - ", ", ".join(methods[each][e]))
 print("\n\n")
 
 print("***************************************** Transformed to Healthy *****************************************************")

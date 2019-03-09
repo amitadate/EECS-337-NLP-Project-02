@@ -1,5 +1,5 @@
 import string
-from difflib import get_close_matches 
+from nltk.corpus import stopwords
 
 def methods_tools_extracter(directions, ingredients, PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS):
     def get_food_from_ingredients(ingredients):
@@ -15,6 +15,7 @@ def methods_tools_extracter(directions, ingredients, PRIMARY_COOKING_METHODS, SE
         for j  in e.split("."):
             if "\n" in j:
                 continue
+            j = j.strip()
             method[j] = {}
             method[j]["primary_method"] = []
             method[j]["seconary_method"] = []
@@ -35,11 +36,12 @@ def methods_tools_extracter(directions, ingredients, PRIMARY_COOKING_METHODS, SE
                     num = cur_word
                 elif cur_word.lower() in times:
                     if int(num) > 0:
-                        method[j]["time"] = str(num) + " " + cur_word
+                        method[j]["time"].append(str(num) + " " + cur_word)
                         num = 0
-                ingre = get_close_matches(cur_word, all_food, 1, 0.2)
-                if ingre:  #cur_word in all_food:
-                    method[j]["ingredient"].add(ingre[0])
+                for each in all_food:
+                    if cur_word not in stopwords.words() and cur_word in each:
+                        method[j]["ingredient"].add(each)
+                        break
     return method
 
 def is_number(item):
