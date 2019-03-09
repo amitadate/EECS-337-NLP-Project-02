@@ -6,6 +6,10 @@ from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, T
 
 
 def func_one(methods):
+    print("***************************************** Original Scraped Recipie *****************************************************")
+    for each in methods:
+        print("1* ", each)
+    print("\n\n")
     print("***************************************** Transformed to Healthy *****************************************************")
     transformed_healthy_method = replace_instructions(methods, healthy)
     print(' * ', end='')
@@ -13,6 +17,11 @@ def func_one(methods):
     print("\n\n")
 
 def func_two(methods):
+    print("***************************************** Original Scraped Recipie *****************************************************")
+    print('', end='')
+    for each in methods:
+        print("\n * ", each)
+    print("\n\n")
     print("***************************************** Transformed to Vegetarian *****************************************************")
     transformed_vegeterian_method = replace_instructions(methods, vegetarian)
     print(' * ', end='')
@@ -20,6 +29,11 @@ def func_two(methods):
     print("\n\n")
 
 def func_three(methods):
+    print("***************************************** Original Scraped Recipie *****************************************************")
+    print('', end='')
+    for each in methods:
+        print("\n * ", each)
+    print("\n\n")
     print("***************************************** Transformed to Vegan *****************************************************")
     transformed_vegan_method = replace_instructions(methods, to_vegan_list)
     print(' * ', end='')
@@ -27,6 +41,11 @@ def func_three(methods):
     print("\n\n")
 
 def func_four(methods):
+    print("***************************************** Original Scraped Recipie *****************************************************")
+    print('', end='')
+    for each in methods:
+        print("\n * ", each)
+    print("\n\n")
     print("***************************************** Transformed to Chinese *****************************************************")
     transformed_chinese_method = replace_instructions(methods, normal_to_chinese)
     print(' * ', end='')
@@ -34,6 +53,16 @@ def func_four(methods):
     print("\n\n")
 
 def func_five(methods):
+    print("***************************************** Original Scraped Recipie *****************************************************")
+    print('', end='')
+    for each in methods:
+        print("\n * ", each)
+    print("\n\n")
+    print("***************************************** Original Scraped Recipie *****************************************************")
+    transformed_healthy_method = replace_instructions(methods, healthy)
+    print(' * ', end='')
+    print("\n * ".join(transformed_healthy_method))
+    print("\n\n")
     print("***************************************** Transformed to Mexican *****************************************************")
     transformed_mexican_method = replace_instructions(methods, x_to_mexican)
     print(' * ', end='')
@@ -41,6 +70,11 @@ def func_five(methods):
     print("\n\n")
 
 def func_six(methods):
+    print("***************************************** Original Scraped Recipie *****************************************************")
+    print('', end='')
+    for each in methods:
+        print("\n * ", each)
+    print("\n\n")
     print("***************************************** Transformed to Indian *****************************************************")
     transformed_indian_method = replace_instructions(methods, x_to_indian)
     print(' * ', end='')
@@ -48,6 +82,11 @@ def func_six(methods):
     print("\n\n")
 
 def func_seven(methods):
+    print("***************************************** Original Scraped Recipie *****************************************************")
+    print('', end='')
+    for each in methods:
+        print("\n * ", each)
+    print("\n\n")
     print("***************************************** Transformed to Italian *****************************************************")
     transformed_italian_method = replace_instructions(methods, x_to_italian)
     print(' * ', end='')
@@ -57,6 +96,11 @@ def func_seven(methods):
 
 
 def func_eight(methods):
+    print("***************************************** Original Scraped Recipie *****************************************************")
+    print('', end='')
+    for each in methods:
+        print("\n * ", each)
+    print("\n\n")
     print("***************************************** Transformed to  *****************************************************")
     transformed_healthy_method = replace_instructions(methods, healthy)
     print(' * ', end='')
@@ -64,6 +108,11 @@ def func_eight(methods):
     print("\n\n")
 
 def func_nine(methods):
+    print("***************************************** Original Scraped Recipie *****************************************************")
+    print('', end='')
+    for each in methods:
+        print("\n * ", each)
+    print("\n\n")
     print("***************************************** Transformed to  *****************************************************")
     transformed_healthy_method = replace_instructions(methods, healthy)
     print(' * ', end='')
@@ -71,6 +120,11 @@ def func_nine(methods):
     print("\n\n")
 
 def func_ten(methods):
+    print("***************************************** Original Scraped Recipie *****************************************************")
+    print('', end='')
+    for each in methods:
+        print("\n * ", each)
+    print("\n\n")
     print("***************************************** Transformed to *****************************************************")
     transformed_healthy_method = replace_instructions(methods, healthy)
     print(' * ', end='')
