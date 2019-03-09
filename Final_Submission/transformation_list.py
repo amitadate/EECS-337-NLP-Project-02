@@ -272,6 +272,16 @@ to_vegan_list = {
 
 normal_to_chinese = {
     "olive oil": "peanut oil",
+    "burger": " chinese burger",
+    "vegetable oil": "peanut oil",
+    "canola oil": "peanut oil",
+    "olive oil": "peanut oil",
+    "peanut oil": "peanut oil",
+    "coconut oil": "peanut oil",
+    "corn oil": "peanut oil",
+    "sunflower oil": "peanut oil",
+    "safflower oil": "peanut oil",
+    "spaghetti pasta": "lo mein",
     "spaghetti": "lo mein",
     "vinegar": "black vinegar",
     "red pepper flakes": "dried chili pepper",
@@ -286,13 +296,34 @@ normal_to_chinese = {
     "Meat Sauce": "Da Lu Mian",
     "Churro": "You Tiao",
     "Pizza": "Scallion Pancake",
-    "wine": "shaojiu",
+    "wine": "Shaoxing wine",
     "pork": "tofu",
     "chicken nuggets": "chicken balls",
     "jerky": "Bak Kwa",
     "pork": "Mapo Doufu",
     "meat": "Bakkwa",
     "lamb": "lamb broth",
+    "pasta": "lo mein",
+    "sauce": "Hoisin Sauce",
+    "shrimp": "Cha Jang Mein",
+    "tofu": "mapo tofu",
+    "white rice": "Jasmine Scented Rice",
+    "corn": "bok choy",
+    "ice cream": "baobing",
+    "tea": "chinese tea",
+    "sausage": "lap ceung"
+}
+
+normal_to_chinese_utensils = {
+    "fork": "chopsticks",
+    "frying pan": "wok",
+    "pan": "wok",
+    "rice cooker": "Donabe",
+    "cooker": "Donabe",
+    "spatula": "chuan",
+    "hoak": "hoak",
+    "pot": "wok",
+    "steamers": "Bamboo steamers"
 }
 
 
