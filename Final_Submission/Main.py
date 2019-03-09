@@ -63,11 +63,6 @@ def func_five(methods):
     for each in methods:
         print("\n * ", each)
     print("\n\n")
-    print("***************************************** Original Scraped Recipie *****************************************************")
-    transformed_healthy_method = replace_instructions(methods, healthy)
-    print(' * ', end='')
-    print("\n * ".join(transformed_healthy_method))
-    print("\n\n")
     print("***************************************** Transformed to Mexican *****************************************************")
     transformed_mexican_method = replace_instructions(methods, x_to_mexican)
     print(' * ', end='')

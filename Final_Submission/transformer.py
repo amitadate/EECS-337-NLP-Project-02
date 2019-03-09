@@ -4,5 +4,7 @@ def replace_instructions(steps, replace):
         for e_replace in replace:
             if e_replace in each:
                 each = each.replace(e_replace, replace[e_replace])
+            elif e_replace in each.lower():
+                each = each.lower().replace(e_replace, replace[e_replace])
         update_dir.append(each.strip())
     return update_dir
