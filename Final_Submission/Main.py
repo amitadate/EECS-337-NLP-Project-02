@@ -2,7 +2,7 @@ from url_srapper import getScrapedData
 from data_extractor import methods_tools_extracter, ingredients_extracter, nutrition_extracter
 from transformer import replace_instructions
 from transformation_list import healthy, vegetarian, to_vegan_list, normal_to_chinese
-from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, UNITS, DESCRIPTOR
+from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, UNITS, DESCRIPTOR, all_food
 
 food_link1 = "https://www.allrecipes.com/recipe/222000/spaghetti-aglio-e-olio"
 print("****************************************  Scrapped Data  ******************************************************")
@@ -21,7 +21,7 @@ print(nutrition)
 print("\n\n")
 
 print("******************************************** Methods **************************************************")
-methods = methods_tools_extracter(scrapped_data['directions'], ingredients, PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS)
+methods = methods_tools_extracter(scrapped_data['directions'], PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, all_food)
 print('', end='')
 for each in methods:
     print("\n * ", each)

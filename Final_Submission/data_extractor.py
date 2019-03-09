@@ -1,16 +1,12 @@
 import string
-from nltk.corpus import stopwords
+#from nltk.corpus import stopwords
 
-def methods_tools_extracter(directions, ingredients, PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS):
-    def get_food_from_ingredients(ingredients):
-        all_ingredient  = []
-        for each in ingredients:
-            if each.startswith('name'):
-                all_ingredient.append(ingredients[each])
-        return all_ingredient
+def methods_tools_extracter(directions, PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, all_food):
+    # def remove_comma(s):
+    #     if len(s) > 0 and s.endswith(","): 
+    #         return s.rstrip(',')
     method = {}
     times = ["minutes", "seconds", "hours"]
-    all_food = get_food_from_ingredients(ingredients)
     for e in directions:
         for j  in e.split("."):
             if "\n" in j:
@@ -22,26 +18,32 @@ def methods_tools_extracter(directions, ingredients, PRIMARY_COOKING_METHODS, SE
             method[j]["tools"] = []
             method[j]["ingredient"] = set() 
             method[j]["time"] = [] 
+            method[j]["step"] = []
             num = 0
+            step = ""
             for i in j.split(" "):
                 cur_word = i.lower()
                 cur_word = cur_word.strip(string.punctuation)
                 if cur_word in PRIMARY_COOKING_METHODS:
                     method[j]["primary_method"].append(cur_word)
+                    step = step + cur_word + " "
                 elif cur_word in SECONDARY_COOKING_METHODS:
-                    method[j]["seconary_method"].append(cur_word)  
+                    method[j]["seconary_method"].append(cur_word) 
+                    step = step + cur_word + " "
                 elif cur_word in TOOLS:
-                    method[j]["tools"].append(cur_word)  
+                    method[j]["tools"].append(cur_word)
+                    step = step + " in " + cur_word + " "
                 elif is_number(cur_word):
                     num = cur_word
                 elif cur_word.lower() in times:
                     if int(num) > 0:
                         method[j]["time"].append(str(num) + " " + cur_word)
+                        step = step + " for " + str(num) + " " + cur_word + " "
                         num = 0
-                for each in all_food:
-                    if cur_word not in stopwords.words() and cur_word in each:
-                        method[j]["ingredient"].add(each)
-                        break
+                elif cur_word in all_food:
+                    method[j]["ingredient"].add(cur_word)
+                    step = step + cur_word + ", "
+            method[j]["step"].append(step.rstrip(', '))
     return method
 
 def is_number(item):
