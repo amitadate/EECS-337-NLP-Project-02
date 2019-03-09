@@ -27,7 +27,7 @@ with open('chinese.txt', 'w') as f:
     for item in scrape_ingrdients(CHINESE):
         f.write("%s\n" % item)
 
-with open('veg.txt', 'w') as f:
+with open('indian.txt', 'w') as f:
     for item in scrape_ingrdients(INDIAN):
         f.write("%s\n" % item)
 
