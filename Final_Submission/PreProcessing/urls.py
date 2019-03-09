@@ -6,7 +6,7 @@ VEG = [
 ]
 
 INDIAN = [
-    ''
+    'https://www.allrecipes.com/recipe/246179/black-chana-with-potato'
 ]
 
 CHINESE = [
@@ -19,9 +19,7 @@ CHINESE = [
     'https://www.allrecipes.com/recipe/235560/chef-johns-five-spice-carrots'
 ]
 
-NONVEG = [
-    ''
-]
+
 
 
 

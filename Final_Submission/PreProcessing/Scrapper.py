@@ -1,5 +1,5 @@
 from lxml import html
-from urls import VEG, NONVEG, CHINESE, INDIAN
+from urls import VEG, CHINESE, INDIAN
 from data_extractor import ingredients_extracter
 from extracter_list import UNITS, DESCRIPTOR
 import requests
@@ -21,10 +21,6 @@ def scrape_ingrdients(urls):
 
 with open('veg.txt', 'w') as f:
     for item in scrape_ingrdients(VEG):
-        f.write("%s\n" % item)
-
-with open('non-veg.txt', 'w') as f:
-    for item in scrape_ingrdients(NONVEG):
         f.write("%s\n" % item)
 
 with open('chinese.txt', 'w') as f:
