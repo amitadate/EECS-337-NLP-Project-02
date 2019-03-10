@@ -21,7 +21,7 @@ def func_two(methods):
     print("***************************************** Original Scraped Recipie *****************************************************")
     print(' * ', end='')
     for each in methods:
-        print("\n * ", each)
+        print(" * ", each)
     print("\n\n")
     print("***************************************** Transformed to Vegetarian *****************************************************")
     transformed_vegeterian_method = replace_instructions(methods, vegetarian)
