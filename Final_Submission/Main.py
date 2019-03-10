@@ -71,7 +71,7 @@ def func_four(methods):
     transformed_chinese_method = replace_instructions(transformed_chinese_method, normal_to_chinese_utensils)
     print(' * ', end='')
     print("\n * ".join(transformed_chinese_method))
-    print("\n * ".join("Also, Don't forget to toast with baijiu"))
+    print("\n * " + "Also, Don't forget to toast with baijiu")
     print("\n\n")
 
 
