@@ -160,7 +160,7 @@ def default():
 def main():
 
     url = ""
-    while url != "exit":
+    while url.lower() != "exit":
         print(' Enter the URL of the Recipie or Enter " EXIT " to exit the Menu ')
         print('--------------------------------')
         url = input()
