@@ -321,7 +321,7 @@ normal_to_chinese_utensils = {
     "rice cooker": "Donabe",
     "cooker": "Donabe",
     "spatula": "chuan",
-    "hoak": "hoak",
+    "ladle": "hoak",
     "pot": "wok",
     "steamers": "Bamboo steamers"
 }
@@ -359,26 +359,13 @@ x_to_mexican = {
     'olives': 'jalapenos'
 }
 
-normal_to_chinese_utensils = {
-    "fork": "chopsticks",
-    "frying pan": "wok",
-    "pan": "wok",
-    "rice cooker": "Donabe",
-    "cooker": "Donabe",
-    "spatula": "chuan",
-    "hoak": "hoak",
-    "pot": "wok",
-    "steamers": "Bamboo steamers"
-}
 
 x_to_indian = {
     'beef': 'chicken',
     'steak': 'chicken',
     'pork': 'lamb',
     'bread': 'naan',
-    'sandwich': 'flatbread',
     'noodles': 'rice',
-    'pasta': 'rice'
     "olive oil": "peanut oil",
     "burger": " chinese burger",
     "vegetable oil": "peanut oil",
@@ -391,6 +378,7 @@ x_to_indian = {
     "safflower oil": "peanut oil",
     "spaghetti pasta": "indian maida pasta",
     "spaghetti": "indian maida pasta",
+    'pasta': 'rice',
     "vinegar": "indian white vinegar",
     "red pepper flakes": "dried chili pepper",
     "italian parsley": "coriander",
@@ -412,18 +400,6 @@ x_to_indian = {
     "white rice": "Indian Chawal (Rice)",
 }
 
-normal_to_chinese_utensils = {
-    "fork": "chopsticks",
-    "frying pan": "wok",
-    "pan": "wok",
-    "rice cooker": "Donabe",
-    "cooker": "Donabe",
-    "spatula": "chuan",
-    "hoak": "hoak",
-    "pot": "wok",
-    "steamers": "Bamboo steamers"
-}
-
 
 x_to_mexican = {
     'beef': 'carnitas',
@@ -455,7 +431,6 @@ x_to_mexican = {
     'ginger root': 'habanero',
     'ginger': 'habanero',
     'olives': 'jalapenos'
-}
 }
 
 normal_to_indian_utensils = {
