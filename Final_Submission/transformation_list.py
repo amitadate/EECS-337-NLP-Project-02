@@ -359,6 +359,17 @@ x_to_mexican = {
     'olives': 'jalapenos'
 }
 
+normal_to_chinese_utensils = {
+    "fork": "chopsticks",
+    "frying pan": "wok",
+    "pan": "wok",
+    "rice cooker": "Donabe",
+    "cooker": "Donabe",
+    "spatula": "chuan",
+    "hoak": "hoak",
+    "pot": "wok",
+    "steamers": "Bamboo steamers"
+}
 
 x_to_indian = {
     'beef': 'chicken',
@@ -368,6 +379,95 @@ x_to_indian = {
     'sandwich': 'flatbread',
     'noodles': 'rice',
     'pasta': 'rice'
+    "olive oil": "peanut oil",
+    "burger": " chinese burger",
+    "vegetable oil": "peanut oil",
+    "canola oil": "peanut oil",
+    "olive oil": "peanut oil",
+    "peanut oil": "peanut oil",
+    "coconut oil": "peanut oil",
+    "corn oil": "peanut oil",
+    "sunflower oil": "peanut oil",
+    "safflower oil": "peanut oil",
+    "spaghetti pasta": "indian maida pasta",
+    "spaghetti": "indian maida pasta",
+    "vinegar": "indian white vinegar",
+    "red pepper flakes": "dried chili pepper",
+    "italian parsley": "coriander",
+    "parmigiano-reggiano cheese": "fermented paneer",
+    "mushrooms": "darjeeling mushrooms",
+    "salad": "Malatang",
+    "Burger": "Indian Hamburger",
+    "French pancake": "Jian Bing",
+    "Meat Sauce": "Da Lu Mian",
+    "Churro": "You Tiao",
+    "Pizza": "Scallion Pancake",
+    "wine": "Sula wine",
+    "pork": "tofu",
+    "chicken nuggets": "tandoori chicken balls",
+    "meat": "mutton",
+    "lamb": "lamb broth",
+    "sauce": "Hoisin Sauce",
+    "tofu": "paneer",
+    "white rice": "Indian Chawal (Rice)",
+}
+
+normal_to_chinese_utensils = {
+    "fork": "chopsticks",
+    "frying pan": "wok",
+    "pan": "wok",
+    "rice cooker": "Donabe",
+    "cooker": "Donabe",
+    "spatula": "chuan",
+    "hoak": "hoak",
+    "pot": "wok",
+    "steamers": "Bamboo steamers"
+}
+
+
+x_to_mexican = {
+    'beef': 'carnitas',
+    'steak': 'carnitas',
+    'fish': 'chicken',
+    'bread': 'tortilla',
+    'potatoes': 'refried beans',
+    'basil': 'cilantro',
+    'parsley': 'cilantro',
+    'bell pepper': 'chili pepper',
+    'string bean': 'kidney bean',
+    'peas': 'black beans',
+    'rice': 'quinoa',
+    'turnip': 'corn',
+    'carrot': 'corn',
+    'eggplant': 'tomato',
+    'leek': 'onion',
+    'garlic': 'onion',
+    'parsley': 'cilantro',
+    'basil': 'cilantro',
+    'flour tortillas': 'corn tortillas',
+    'mushrooms': 'green peppers',
+    'parmesan cheese': 'queso fresco',
+    'lemon': 'lime',
+    'lemon juice': 'lime juice',
+    'coriander': 'paprika',
+    'turmeric': 'paprika',
+    'teriyaki sauce': 'black mole sauce',
+    'ginger root': 'habanero',
+    'ginger': 'habanero',
+    'olives': 'jalapenos'
+}
+}
+
+normal_to_indian_utensils = {
+    "fork": "fork",
+    "frying pan": "Indian Frying Kadai",
+    "pan": "Indian Tava",
+    "rice cooker": "pressure cooker",
+    "cooker": "pressure cooker",
+    "spatula": "Indian spatula palta",
+    "ladle": "Indian ladle degchi",
+    "pot": "Indian pot Kadai",
+    "steamers": "Bamboo steamers"
 }
 
 x_to_italian = {
