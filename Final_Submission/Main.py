@@ -5,6 +5,23 @@ from transformation_list import healthy, vegetarian, to_vegan_list, normal_to_ch
 from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, UNITS, DESCRIPTOR, all_food
 
 
+
+def func_q(ingredients, nutrition, methods):
+    print(" INGREDIENTS :")
+    print("\n")
+    print(ingredients)
+    print("\n\n")
+    print(" Nutrients :")
+    print("\n")
+    print(nutrition)
+    print("\n\n")
+    print(" Methods :")
+    for each in methods:
+       print("\n * ", each)
+       for e in methods[each]:
+           print("   ", e, " - ", ", ".join(methods[each][e]))
+    print("\n\n")
+
 def func_one(methods):
     print("***************************************** Original Scraped Recipie *****************************************************")
     for each in methods:
@@ -54,6 +71,7 @@ def func_four(methods):
     transformed_chinese_method = replace_instructions(transformed_chinese_method, normal_to_chinese_utensils)
     print(' * ', end='')
     print("\n * ".join(transformed_chinese_method))
+    print("\n Also, Don't forget to toast with baijiu")
     print("\n\n")
 
 
@@ -186,12 +204,15 @@ def main():
                 print('--------------------------------')
                 # print("\n")
 
-                user_input = str(input("Enter 1 ----> Transform to Healthy\n\nEnter 2 ----> Transform to Vegetarian\n\nEnter 3 ----> Transform to Vegan\n\nEnter 4 ----> Transform to Chinese\n\nEnter 5 ----> Transform to Mexican\n\nEnter 6 ----> Transform to Indian\n\nEnter 7 ----> Transform to Italian\n\nEnter 8 ----> Transform to Non-Healthy\n\nEnter 9 ----> Transform to Non-Vegetarian\n\nEnter 10 ----> Transform to Non-Vegan\n\nEnter 0 ----> EXIT back to toggle URL  "))
+                user_input = str(input("Enter q ----> To view scraped data and Ingridients, Nutrition and Methods\nEnter 1 ----> Transform to Healthy\n\nEnter 2 ----> Transform to Vegetarian\n\nEnter 3 ----> Transform to Vegan\n\nEnter 4 ----> Transform to Chinese\n\nEnter 5 ----> Transform to Mexican\n\nEnter 6 ----> Transform to Indian\n\nEnter 7 ----> Transform to Italian\n\nEnter 8 ----> Transform to Non-Healthy\n\nEnter 9 ----> Transform to Non-Vegetarian\n\nEnter 10 ----> Transform to Non-Vegan\n\nEnter 0 ----> EXIT back to toggle URL  "))
                 if user_input == "0":
                     break
                 else:
-                    SWITCH_DICT = {"1": func_one, "2": func_two, "3": func_three, "4": func_four, "5": func_five, "6": func_six, "7": func_seven, "8": func_eight, "9": func_nine, '10': func_ten}
-                    SWITCH_DICT[user_input](methods)
+                    SWITCH_DICT = {"q": func_q,"1": func_one, "2": func_two, "3": func_three, "4": func_four, "5": func_five, "6": func_six, "7": func_seven, "8": func_eight, "9": func_nine, '10': func_ten}
+                    if user_input == "q":
+                        SWITCH_DICT[user_input](ingredients, nutrition, methods)
+                    else:
+                        SWITCH_DICT[user_input](methods)
 
     return
 
