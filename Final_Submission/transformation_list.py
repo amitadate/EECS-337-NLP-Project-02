@@ -498,7 +498,7 @@ x_to_indian = {
     "Burger": "indian hamburger",
     "Meat Sauce": "kheema chutney",
     "Churro": "meetha batter",
-    "Pizza": "indian pizza"
+    "Pizza": "indian pizza",
     "wine": "sula wine",
     "pork": "tofu",
     "chicken nuggets": "tandoori chicken balls",
@@ -542,7 +542,7 @@ x_to_mexican = {
     'teriyaki sauce': 'black mole sauce',
     'ginger root': 'habanero',
     'ginger': 'habanero',
-    'olives': 'jalapenos'
+    'olives': 'jalapenos',
     "butter":"compound butter",
     "spinach":"mexican spinach"
 

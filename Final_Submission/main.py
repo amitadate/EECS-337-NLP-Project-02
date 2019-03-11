@@ -169,7 +169,7 @@ def func_ten(methods):
 
 
 def default():
-    print("\n KINDLY ENTER 1 - 10 or 0 to EXIT")
+    print("\n KINDLY ENTER 1 - 9 or 0 to EXIT")
 
 
 def main():
@@ -219,11 +219,11 @@ def main():
                 print('--------------------------------')
                 # print("\n")
 
-                user_input = str(input("Enter a ----> To view scraped data and Ingridients, Nutrition and Methods\n\nEnter 1 ----> Transform to Healthy\n\nEnter 2 ----> Transform to Vegetarian\n\nEnter 3 ----> Transform to Vegan\n\nEnter 4 ----> Transform to Chinese\n\nEnter 5 ----> Transform to Mexican\n\nEnter 6 ----> Transform to Indian\n\nEnter 7 ----> Transform to Italian\n\nEnter 8 ----> Transform to Non-Healthy\n\nEnter 9 ----> Transform to Non-Vegetarian\n\nEnter 10 ----> Transform to Non-Vegan\n\nEnter 0 ----> EXIT back to toggle URL  "))
+                user_input = str(input("Enter a ----> To view scraped data and Ingridients, Nutrition and Methods\n\nEnter 1 ----> Transform to Healthy\n\nEnter 2 ----> Transform to Vegetarian\n\nEnter 3 ----> Transform to Vegan\n\nEnter 4 ----> Transform to Chinese\n\nEnter 5 ----> Transform to Mexican\n\nEnter 6 ----> Transform to Indian\n\nEnter 7 ----> Transform to Italian\n\nEnter 8 ----> Transform to Non-Healthy\n\nEnter 9 ----> Transform to Non-Vegetarian\n\nEnter 0 ----> EXIT back to toggle URL  "))
                 if user_input == "0":
                     break
                 else:
-                    SWITCH_DICT = {"a": func_q, "1": func_one, "2": func_two, "3": func_three, "4": func_four, "5": func_five, "6": func_six, "7": func_seven, "8": func_eight, "9": func_nine, '10': func_ten}
+                    SWITCH_DICT = {"a": func_q, "1": func_one, "2": func_two, "3": func_three, "4": func_four, "5": func_five, "6": func_six, "7": func_seven, "8": func_eight, "9": func_nine}
                     if user_input == "a":
                         SWITCH_DICT[user_input](ingredients, nutrition, methods)
                     else:
