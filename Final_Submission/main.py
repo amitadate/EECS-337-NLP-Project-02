@@ -1,7 +1,7 @@
 from url_srapper import getScrapedData
 from data_extractor import methods_tools_extracter, ingredients_extracter, nutrition_extracter
 from transformer import replace_instructions
-from transformation_list import healthy, vegetarian, to_vegan_list, normal_to_chinese, x_to_indian, x_to_italian, x_to_mexican, normal_to_chinese_utensils
+from transformation_list import healthy, vegetarian, to_vegan_list, normal_to_chinese, x_to_indian, x_to_italian, x_to_mexican, normal_to_chinese_utensils, x_to_non_healthy
 from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, UNITS, DESCRIPTOR, all_food
 
 
@@ -78,6 +78,8 @@ def func_four(methods):
     transformed_chinese_method = replace_instructions(transformed_chinese_method, normal_to_chinese_utensils)
     print(' * ', end='')
     print("\n * ".join(transformed_chinese_method))
+    print(" * " + "Sprinkle it with star anise, chinese cinammon and cassia powder")
+    print(" * " + "You can make it more delicious by adding Hoisin Sauce")
     print(" * " + "Also, Don't forget to toast with baijiu")
     print("\n\n")
 
@@ -127,10 +129,10 @@ def func_eight(methods):
     for each in methods:
         print(" *", each)
     print("\n\n")
-    print("***************************************** Transformed to  *****************************************************")
-    transformed_healthy_method = replace_instructions(methods, healthy)
+    print("***************************************** Transformed to Non Healthy ***************************************************")
+    transformed_non_healthy_method = replace_instructions(methods, x_to_non_healthy)
     print(' * ', end='')
-    print("\n * ".join(transformed_healthy_method))
+    print("\n * ".join(transformed_non_healthy_method))
     print("\n\n")
 
 

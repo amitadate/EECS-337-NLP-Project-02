@@ -135,3 +135,6 @@ healthy = {
     "cheddar cheese": "fat-free cheese",
     "cheese": "low-fat cheese"
 }
+
+inv_map = {v: k for k, v in healthy.items()}
+print(inv_map)
