@@ -79,8 +79,8 @@ def func_four(methods):
     print(' * ', end='')
     print("\n * ".join(transformed_chinese_method))
     print(" * " + "Sprinkle it with star anise, chinese cinammon and cassia powder")
-    print(" * " + "You can make it more delicious by adding Hoisin Sauce")
-    print(" * " + "Also, Don't forget to toast with baijiu")
+    print(" * " + "You can make it more delicious by adding hoisin sauce")
+    print(" * " + "Also, don't forget to toast with baijiu")
     print("\n\n")
 
 
