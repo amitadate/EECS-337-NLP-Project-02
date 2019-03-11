@@ -1,7 +1,7 @@
 from url_srapper import getScrapedData
 from data_extractor import methods_tools_extracter, ingredients_extracter, nutrition_extracter
 from transformer import replace_instructions
-from transformation_list import healthy, vegetarian, to_vegan_list, normal_to_chinese, x_to_indian, x_to_italian, x_to_mexican, normal_to_chinese_utensils, x_to_non_healthy, x_to_non_veg
+from transformation_list import healthy, vegetarian, to_vegan_list, normal_to_chinese, x_to_indian, normal_to_indian_utensils, x_to_italian, x_to_mexican, normal_to_chinese_utensils, x_to_non_healthy, x_to_non_veg
 from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, UNITS, DESCRIPTOR, all_food
 
 
@@ -124,10 +124,11 @@ def func_seven(methods):
     for each in methods:
         print(" *", each)
     print("\n\n")
-    print("***************************************** Transformed to Mexican *****************************************************")
-    transformed_mexican_method = replace_instructions(methods, x_to_mexican)
+    print("***************************************** Transformed to Indian *****************************************************")
+    transformed_indian_method = replace_instructions(methods, x_to_indian)
+    transformed_indian_method = replace_instructions(transformed_indian_method, normal_to_indian_utensils)
     print(' * ', end='')
-    print("\n * ".join(transformed_mexican_method))
+    print("\n * ".join(transformed_indian_method))
     print("\n\n")
 
 
@@ -137,10 +138,10 @@ def func_eight(methods):
     for each in methods:
         print(" *", each)
     print("\n\n")
-    print("***************************************** Transformed to Indian *****************************************************")
-    transformed_indian_method = replace_instructions(methods, x_to_indian)
+    print("***************************************** Transformed to Mexican *****************************************************")
+    transformed_mexican_method = replace_instructions(methods, x_to_mexican)
     print(' * ', end='')
-    print("\n * ".join(transformed_indian_method))
+    print("\n * ".join(transformed_mexican_method))
     print("\n\n")
 
 
@@ -221,7 +222,7 @@ def main():
                 print('--------------------------------')
                 # print("\n")
 
-                user_input = str(input("Enter a ----> To view scraped data and Ingridients, Nutrition and Methods\n\nEnter 1 ----> Transform to Healthy\n\nEnter 2 ----> Transform to Non-Healthy\n\nEnter 3 ----> Transform to Vegetarian\n\nEnter 4 ----> Transform to Non-Vegetarian\n\nEnter 5 ----> Transform to Vegan\n\nEnter 6 ----> Transform to Chinese\n\nEnter 7 ----> Transform to Mexican\n\nEnter 8 ----> Transform to Indian\n\nEnter 9 ----> Transform to Italian\n\nEnter 0 ----> EXIT back to toggle URL  "))
+                user_input = str(input("Enter a ----> To view scraped data and Ingridients, Nutrition and Methods\n\nEnter 1 ----> Transform to Healthy\n\nEnter 2 ----> Transform to Non-Healthy\n\nEnter 3 ----> Transform to Vegetarian\n\nEnter 4 ----> Transform to Non-Vegetarian\n\nEnter 5 ----> Transform to Vegan\n\nEnter 6 ----> Transform to Chinese\n\nEnter 7 ----> Transform to Indian\n\nEnter 8 ----> Transform to Mexican\n\nEnter 9 ----> Transform to Italian\n\nEnter 0 ----> EXIT back to toggle URL  "))
                 if user_input == "0":
                     break
                 else:

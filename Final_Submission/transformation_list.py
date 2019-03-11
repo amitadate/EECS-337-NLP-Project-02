@@ -518,15 +518,14 @@ x_to_mexican = {
 }
 
 normal_to_indian_utensils = {
-    "fork": "fork",
-    "frying pan": "Indian Frying Kadai",
-    "pan": "Indian Tava",
+    "frying pan": "indian frying pan (kadai)",
+    "pan": "indian pan (tava)",
     "rice cooker": "pressure cooker",
     "cooker": "pressure cooker",
-    "spatula": "Indian spatula palta",
-    "ladle": "Indian ladle degchi",
-    "pot": "Indian pot Kadai",
-    "steamers": "Bamboo steamers"
+    "spatula": "indian spatula (palta)",
+    "ladle": "indian ladle (degchi)",
+    "pot": "indian pot (kadai)",
+    "steamers": "bamboo steamers"
 }
 
 x_to_italian = {
