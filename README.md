@@ -22,18 +22,18 @@ a) ----> To view scraped data, Ingridients, Nutrition and Methods
 
 1) ----> Transform to Healthy
 
-2) ----> Transform to Vegetarian
+2) ----> Transform to Non-Healthy
 
-3) ----> Transform to Vegan
+3) ----> Transform to Vegetarain
 
-4) ----> Transform to Chinese
+4) ----> Transform to Non-Vegetarian
 
-5) ----> Transform to Mexican
+5) ----> Transform to Vegan
 
-6) ----> Transform to Indian
+6) ----> Transform to Chinese
 
-7) ----> Transform to Italian
+7) ----> Transform to Mexican
 
-8) ----> Transform to Non-Healthy
+8) ----> Transform to Indian
 
-9) ----> Transform to Non-Vegetarian
+9) ----> Transform to Italian
