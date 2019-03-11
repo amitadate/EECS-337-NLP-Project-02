@@ -163,12 +163,12 @@ vegetarian = {
     "meatball": "veggie meatball",
     "sausage": "veggie sausage",
     "bacon": "veggie bacon",
-    "turkey": "soy turkey patties",
+    "turkey": "soy patties",
     "chicken breast": "seitan tenders",
     "chicken leg": "seitan tenders",
     "chicken thigh": "seitan tenders",
-    "chicken": "soy chicken patties",
-    "chicken nuggets": "soy chicken nuggets",
+    "chicken": "soy patties",
+    "chicken nuggets": "soy nuggets",
     "jerky": "veggie jerky",
     "pork": "tempeh",
     "meat": "tofurky deli slice",
@@ -190,7 +190,8 @@ vegetarian = {
     "shrimp": "tofu",
     "prawn": "tofu",
     "gelatin": "agar flakes",
-    "chicken soup":"vegetable soup"
+    "chicken soup":"vegetable soup",
+    "fish": "veg"
 }
 
 to_vegan_list = {
@@ -613,5 +614,3 @@ x_to_non_veg = {
     'rice':'chicken rice',
     'pizza':'pepporoni pizza'
  }
-
-

@@ -1,10 +1,6 @@
 import string
-#from nltk.corpus import stopwords
 
 def methods_tools_extracter(directions, PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, all_food):
-    # def remove_comma(s):
-    #     if len(s) > 0 and s.endswith(","): 
-    #         return s.rstrip(',')
     method = {}
     times = ["minutes", "seconds", "hours"]
     for e in directions:
