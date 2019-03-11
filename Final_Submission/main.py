@@ -32,6 +32,8 @@ def func_q(ingredients, nutrition, methods):
     for each in methods:
         print("\n * ", each)
         for e in methods[each]:
+            if e is "Ingredient":
+                continue
             print("   ", e, " - ", ", ".join(methods[each][e]))
     print("\n\n")
 

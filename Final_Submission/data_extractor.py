@@ -9,37 +9,39 @@ def methods_tools_extracter(directions, PRIMARY_COOKING_METHODS, SECONDARY_COOKI
                 continue
             j = j.strip()
             method[j] = {}
-            method[j]["primary_method"] = []
-            method[j]["seconary_method"] = []
-            method[j]["tools"] = []
-            method[j]["ingredient"] = set() 
-            method[j]["time"] = [] 
-            method[j]["step"] = []
+            method[j]["Primary method"] = []
+            method[j]["Secondary method"] = []
+            method[j]["Tools"] = []
+            method[j]["Ingredient"] = set() 
+            method[j]["Time"] = [] 
+            method[j]["Step"] = []
             num = 0
             step = ""
             for i in j.split(" "):
                 cur_word = i.lower()
                 cur_word = cur_word.strip(string.punctuation)
                 if cur_word in PRIMARY_COOKING_METHODS:
-                    method[j]["primary_method"].append(cur_word)
+                    if cur_word not in method[j]["Primary method"]:
+                        method[j]["Primary method"].append(cur_word)
                     step = step + cur_word + " "
                 elif cur_word in SECONDARY_COOKING_METHODS:
-                    method[j]["seconary_method"].append(cur_word) 
+                    if cur_word not in method[j]["Secondary method"]:
+                        method[j]["Secondary method"].append(cur_word) 
                     step = step + cur_word + " "
                 elif cur_word in TOOLS:
-                    method[j]["tools"].append(cur_word)
+                    method[j]["Tools"].append(cur_word)
                     step = step + " in " + cur_word + " "
                 elif is_number(cur_word):
                     num = cur_word
                 elif cur_word.lower() in times:
                     if int(num) > 0:
-                        method[j]["time"].append(str(num) + " " + cur_word)
+                        method[j]["Time"].append(str(num) + " " + cur_word)
                         step = step + " for " + str(num) + " " + cur_word + " "
                         num = 0
                 elif cur_word in all_food:
-                    method[j]["ingredient"].add(cur_word)
+                    method[j]["Ingredient"].add(cur_word)
                     step = step + cur_word + ", "
-            method[j]["step"].append(step.rstrip(', '))
+            method[j]["Step"].append(step.rstrip(', '))
     return method
 
 def is_number(item):

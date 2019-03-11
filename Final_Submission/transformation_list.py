@@ -191,7 +191,7 @@ vegetarian = {
     "prawn": "tofu",
     "gelatin": "agar flakes",
     "chicken soup":"vegetable soup",
-    "fish": "veg"
+    "fish": "soy"
 }
 
 to_vegan_list = {
