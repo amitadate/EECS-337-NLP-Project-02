@@ -269,7 +269,8 @@ to_vegan_list = {
     "lamb": "tempeh",
     "bacon": "vegan bacon",
     "steak": "seitan steak",
-    "turkey": "tofurky"
+    "turkey": "tofurky",
+    "fish": "soy"
 }
 
 normal_to_chinese = {
@@ -436,39 +437,6 @@ x_to_non_healthy = {
  'low-fat cheese': 'high-fat cheese',
  'sweet potatoes':'potatoes'
  }
-
-
-x_to_mexican = {
-    'beef': 'carnitas',
-    'steak': 'carnitas',
-    'fish': 'chicken',
-    'bread': 'tortilla',
-    'potatoes': 'refried beans',
-    'basil': 'cilantro',
-    'parsley': 'cilantro',
-    'bell pepper': 'chili pepper',
-    'string bean': 'kidney bean',
-    'peas': 'black beans',
-    'rice': 'quinoa',
-    'turnip': 'corn',
-    'carrot': 'corn',
-    'eggplant': 'tomato',
-    'leek': 'onion',
-    'garlic': 'onion',
-    'parsley': 'cilantro',
-    'basil': 'cilantro',
-    'flour tortillas': 'corn tortillas',
-    'mushrooms': 'green peppers',
-    'parmesan cheese': 'queso fresco',
-    'lemon': 'lime',
-    'lemon juice': 'lime juice',
-    'coriander': 'paprika',
-    'turmeric': 'paprika',
-    'teriyaki sauce': 'black mole sauce',
-    'ginger root': 'habanero',
-    'ginger': 'habanero',
-    'olives': 'jalapenos'
-}
 
 x_to_indian = {
     'beef': 'chicken',
