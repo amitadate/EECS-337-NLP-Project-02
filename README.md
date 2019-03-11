@@ -15,3 +15,25 @@ Repository for projects undertaken in the course ' Natural Language Processing '
 4. Run main.py (to get a menu interface)
 
 Note - In the menu, scroll up to see results displayed or use terminal in fullscreen mode
+
+## Transformations
+
+a) ----> To view scraped data, Ingridients, Nutrition and Methods
+
+1) ----> Transform to Healthy
+
+2) ----> Transform to Vegetarian
+
+3) ----> Transform to Vegan
+
+4) ----> Transform to Chinese
+
+5) ----> Transform to Mexican
+
+6)----> Transform to Indian
+
+7) ----> Transform to Italian
+
+8) ----> Transform to Non-Healthy
+
+9) ----> Transform to Non-Vegetarian
