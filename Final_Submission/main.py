@@ -6,15 +6,17 @@ from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, T
 
 
 def func_q(ingredients, nutrition, methods):
-    print(" INGREDIENTS :")
+    print("\n\n")
+    print("******************** Ingredients ********************")
     print("\n")
     print(ingredients)
     print("\n\n")
-    print(" Nutrients :")
+    print("******************** Nutrients ********************")
     print("\n")
-    print(nutrition)
+    for key, value in nutrition.items():
+        print(" * " + key + ": " + value)
     print("\n\n")
-    print(" Methods :")
+    print("******************** Methods ********************")
     for each in methods:
         print("\n * ", each)
         for e in methods[each]:
