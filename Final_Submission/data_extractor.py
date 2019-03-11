@@ -68,23 +68,27 @@ def ingredients_extracter(ingredient_raw_dict, descriptor, units):
             word = word.replace(',', '')
             word = word.lower()
             if is_number(word) or is_fraction(word):
-                if ('quantity' + str(count)) in ingredients:
-                    ingredients['quantity'+ str(count)] = ingredients['quantity'+ str(count)] + ' ' + word
+                if ('quantity ' + str(count)) in ingredients:
+                    ingredients['quantity '+ str(count)] = ingredients['quantity '+ str(count)] + ',' + word
                 else:
-                    ingredients['quantity'+ str(count)] =  word
+                    ingredients['quantity '+ str(count)] =  word
+
             elif word in units:
-                ingredients['measurement'+ str(count)] = word
+                if ('measurement ' + str(count)) in ingredients:
+                    ingredients['measurement '+ str(count)] = ingredients['measurement '+ str(count)] + ',' + word
+                else:
+                    ingredients['measurement '+ str(count)] =  word
                 
             elif word in descriptor:
-                if ('descriptor' + str(count)) in ingredients:
-                    ingredients['descriptor'+ str(count)] = ingredients['descriptor'+ str(count)] + ' ' + word
+                if ('descriptor ' + str(count)) in ingredients:
+                    ingredients['descriptor '+ str(count)] = ingredients['descriptor '+ str(count)] + ',' + word
                 else:
-                    ingredients['descriptor'+ str(count)] =  word
+                    ingredients['descriptor '+ str(count)] =  word
             else: 
-                if ('name' + str(count)) in ingredients:
-                    ingredients['name' + str(count)] = ingredients['name' + str(count)] +' ' + word
+                if ('ingredient ' + str(count)) in ingredients:
+                    ingredients['ingredient ' + str(count)] = ingredients['ingredient ' + str(count)] +' ' + word
                 else:
-                    ingredients['name' + str(count)] =word
+                    ingredients['ingredient ' + str(count)] =word
         count+=1
     return ingredients
 
