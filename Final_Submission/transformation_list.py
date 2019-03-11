@@ -325,6 +325,7 @@ normal_to_chinese_utensils = {
     "ladle": "hoak",
     "pot": "wok",
     "steamers": "Bamboo steamers"
+    "skillet": "wok"
 }
 
 
@@ -526,6 +527,7 @@ normal_to_indian_utensils = {
     "ladle": "indian ladle (degchi)",
     "pot": "indian pot (kadai)",
     "steamers": "bamboo steamers"
+    "skillet": "indian pan (kadai)"
 }
 
 x_to_italian = {
@@ -542,7 +544,7 @@ x_to_italian = {
     'jalapeno': 'bell pepper',
     'cayenne': 'bell pepper',
     'ginger': 'garlic'
-    
+
 }
 
 x_to_non_veg = {
