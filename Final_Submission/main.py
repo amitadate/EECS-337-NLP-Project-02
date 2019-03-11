@@ -7,20 +7,26 @@ from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, T
 
 def func_q(ingredients, nutrition, methods):
     print("\n\n")
-    print("******************** Ingredients ********************")
+    print(" Ingredients :")
     print("\n")
-    print(ingredients)
+
+    for key,value in ingredients.items():
+        print("    {} : {} ".format(key.upper(),value))
+
     print("\n\n")
-    print("******************** Nutrients ********************")
+    print(" Nutrients :")
+    
     print("\n")
-    for key, value in nutrition.items():
-        print(" * " + key + ": " + value)
+
+    for key,value in nutrition.items():
+        print("    {} : {} ".format(key.upper(),value))
+
     print("\n\n")
-    print("******************** Methods ********************")
+    print(" Methods :")
     for each in methods:
-        print("\n * ", each)
-        for e in methods[each]:
-            print("   ", e, " - ", ", ".join(methods[each][e]))
+       print("\n * ", each)
+       for e in methods[each]:
+           print("   ", e, " - ", ", ".join(methods[each][e]))
     print("\n\n")
 
 
