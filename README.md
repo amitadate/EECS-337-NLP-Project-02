@@ -30,7 +30,7 @@ a) ----> To view scraped data, Ingridients, Nutrition and Methods
 
 5) ----> Transform to Mexican
 
-6)----> Transform to Indian
+6) ----> Transform to Indian
 
 7) ----> Transform to Italian
 
