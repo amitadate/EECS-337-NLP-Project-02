@@ -16,15 +16,21 @@ def replace_instructions(steps, replace):
         step_list = step.split(" ")
         for ing in replace:
             for i in range(1, len(step_list)):
-                if ';' in step_list[i - 1]:
-                    step_list[i - 1] = step_list[i - 1].replace(";", "")
-                if ',' in step_list[i - 1]:
-                    step_list[i - 1] = step_list[i - 1].replace(",", "")
                 if (step_list[i - 1].lower() + " " + step_list[i].lower()) == ing:
                     step_list[i - 1] = replace[ing]
                     step_list[i] = ''
+                elif (step_list[i - 1].lower() + " " + step_list[i].lower()) == (ing + ';'):
+                    step_list[i - 1] = replace[ing] + ';'
+                    step_list[i] = ''
+                elif (step_list[i - 1].lower() + " " + step_list[i].lower()) == (ing + ','):
+                    step_list[i - 1] = replace[ing] + ','
+                    step_list[i] = ''
                 elif step_list[i - 1].lower() == ing:
                     step_list[i - 1] = replace[ing]
+                elif step_list[i - 1].lower() == (ing + ';'):
+                    step_list[i - 1] = replace[ing] + ';'
+                elif step_list[i - 1].lower() == (ing + ','):
+                    step_list[i - 1] = replace[ing] + ','
                 if i == len(step_list) - 1:
                     if step_list[i].lower() == ing:
                         step_list[i] = replace[ing]
