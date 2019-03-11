@@ -494,20 +494,22 @@ x_to_indian = {
     "italian parsley": "coriander",
     "parmigiano-reggiano cheese": "fermented paneer",
     "mushrooms": "darjeeling mushrooms",
-    "salad": "Malatang",
-    "Burger": "Indian Hamburger",
-    "French pancake": "Jian Bing",
-    "Meat Sauce": "Da Lu Mian",
-    "Churro": "You Tiao",
-    "Pizza": "Scallion Pancake",
-    "wine": "Sula wine",
+    "salad": "indian cucumber salad",
+    "Burger": "indian hamburger",
+    "Meat Sauce": "kheema chutney",
+    "Churro": "meetha batter",
+    "Pizza": "indian pizza"
+    "wine": "sula wine",
     "pork": "tofu",
     "chicken nuggets": "tandoori chicken balls",
     "meat": "mutton",
     "lamb": "lamb broth",
     "sauce": "chutney",
     "tofu": "paneer",
-    "white rice": "Indian Chawal (Rice)",
+    "rice": "indian basmati rice",
+    "russet potatoes" : "red potatoes",
+    "butter" : "amul butter",
+    "milk" : "amul milk"
 }
 
 
@@ -541,6 +543,9 @@ x_to_mexican = {
     'ginger root': 'habanero',
     'ginger': 'habanero',
     'olives': 'jalapenos'
+    "butter":"compound butter",
+    "spinach":"mexican spinach"
+
 }
 
 normal_to_indian_utensils = {
@@ -569,6 +574,7 @@ x_to_italian = {
     'jalapeno': 'bell pepper',
     'cayenne': 'bell pepper',
     'ginger': 'garlic'
+    
 }
 
 x_to_non_veg = {
