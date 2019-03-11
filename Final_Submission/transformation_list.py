@@ -324,7 +324,7 @@ normal_to_chinese_utensils = {
     "spatula": "chuan",
     "ladle": "hoak",
     "pot": "wok",
-    "steamers": "Bamboo steamers"
+    "steamers": "Bamboo steamers",
     "skillet": "wok"
 }
 
@@ -526,7 +526,7 @@ normal_to_indian_utensils = {
     "spatula": "indian spatula (palta)",
     "ladle": "indian ladle (degchi)",
     "pot": "indian pot (kadai)",
-    "steamers": "bamboo steamers"
+    "steamers": "bamboo steamers",
     "skillet": "indian pan (kadai)"
 }
 
