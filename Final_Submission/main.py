@@ -1,7 +1,7 @@
 from url_srapper import getScrapedData
 from data_extractor import methods_tools_extracter, ingredients_extracter, nutrition_extracter
 from transformer import replace_instructions
-from transformation_list import healthy, vegetarian, to_vegan_list, normal_to_chinese, x_to_indian, x_to_italian, x_to_mexican, normal_to_chinese_utensils, x_to_non_healthy
+from transformation_list import healthy, vegetarian, to_vegan_list, normal_to_chinese, x_to_indian, x_to_italian, x_to_mexican, normal_to_chinese_utensils, x_to_non_healthy, x_to_non_veg
 from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, UNITS, DESCRIPTOR, all_food
 
 
@@ -9,9 +9,15 @@ def func_q(ingredients, nutrition, methods):
     print("\n\n")
     print(" Ingredients :")
     print("\n")
-
+    count = 1
     for key,value in ingredients.items():
-        print("    {} : {} ".format(key.upper(),value))
+        if str(count) in key:
+            print("    {} : {} ".format(key.upper(),value))
+            continue
+        else:
+            print("\n")
+            print("    {} : {} ".format(key.upper(),value))
+            count += 1
 
     print("\n\n")
     print(" Nutrients :")
@@ -142,10 +148,10 @@ def func_nine(methods):
     for each in methods:
         print(" *", each)
     print("\n\n")
-    print("***************************************** Transformed to  *****************************************************")
-    transformed_healthy_method = replace_instructions(methods, healthy)
+    print("***************************************** Transformed to Non-Vegetarian *************************************************")
+    transformed_non_veg_method = replace_instructions(methods, x_to_non_veg)
     print(' * ', end='')
-    print("\n * ".join(transformed_healthy_method))
+    print("\n * ".join(transformed_non_veg_method))
     print("\n\n")
 
 

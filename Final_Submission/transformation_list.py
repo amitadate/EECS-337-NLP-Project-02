@@ -189,7 +189,8 @@ vegetarian = {
     "calamari": "tempeh",
     "shrimp": "tofu",
     "prawn": "tofu",
-    "gelatin": "agar flakes"
+    "gelatin": "agar flakes",
+    "chicken soup":"vegetable soup"
 }
 
 to_vegan_list = {
@@ -570,5 +571,41 @@ x_to_italian = {
     'ginger': 'garlic'
 }
 
+x_to_non_veg = {
+    'vegetable bouillon': 'beef bouillon',
+    'vegetable broth': 'beef broth',
+    'broth' : 'beef broth',
+    'textured soy protein': 'ground beef',
+    'veggie deli slice': 'salami',
+    'veg deli slice': 'salami',
+    'vegetarian deli slice': 'salami',
+    'portobello mushroom': 'ribs',
+    'mushroom':'chicken cubes',
+    'veggie burger': 'chicken burger',
+    'veg burger':'chicken burger',
+    'veggie meatball': 'chicken meatball',
+    'veg meatball': 'chicken meatball',
+    'veggie sausage': 'chicken sausage',
+    'veg sausage': 'chicken sausage',
+    'veggie bacon': 'bacon',
+    'veg bacon': 'bacon',
+    'veggie patties': 'chicken patties',
+    'veg patties': 'chicken patties',
+    'soy turkey': 'turkey',
+    'seitan tenders': 'chicken thigh',
+    'soy chicken': 'chicken',
+    'soy':'chicken',
+    'veggie jerky': 'jerky',
+    'tempeh': 'calamari',
+    'tofurky deli slice': 'lamb',
+    'tofu': 'chicken',
+    'paneer':'chicken',
+    'agar flakes': 'gelatin',
+    'veg soup':'chicken soup',
+    'vegetable soup':'chicken soup',
+    'potatoes':'chicken cubes',
+    'rice':'chicken rice',
+    'pizza':'pepporoni pizza'
+ }
 
 
