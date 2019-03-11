@@ -131,6 +131,7 @@ healthy = {
     "brioches": "hard french rolls",
     "butter": "whipped butter",
     "avocado": "cucumber slices",
-    "margarine": "diet margarine"
-
+    "margarine": "diet margarine",
+    "cheddar cheese": "fat-free cheese",
+    "cheese": "low-fat cheese"
 }

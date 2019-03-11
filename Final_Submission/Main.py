@@ -5,7 +5,6 @@ from transformation_list import healthy, vegetarian, to_vegan_list, normal_to_ch
 from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, UNITS, DESCRIPTOR, all_food
 
 
-
 def func_q(ingredients, nutrition, methods):
     print(" INGREDIENTS :")
     print("\n")
@@ -17,10 +16,11 @@ def func_q(ingredients, nutrition, methods):
     print("\n\n")
     print(" Methods :")
     for each in methods:
-       print("\n * ", each)
-       for e in methods[each]:
-           print("   ", e, " - ", ", ".join(methods[each][e]))
+        print("\n * ", each)
+        for e in methods[each]:
+            print("   ", e, " - ", ", ".join(methods[each][e]))
     print("\n\n")
+
 
 def func_one(methods):
     print("***************************************** Original Scraped Recipie *****************************************************")
@@ -36,7 +36,6 @@ def func_one(methods):
 
 def func_two(methods):
     print("***************************************** Original Scraped Recipie *****************************************************")
-    print(' * ', end='')
     for each in methods:
         print(" * ", each)
     print("\n\n")
@@ -208,7 +207,7 @@ def main():
                 if user_input == "0":
                     break
                 else:
-                    SWITCH_DICT = {"a": func_q,"1": func_one, "2": func_two, "3": func_three, "4": func_four, "5": func_five, "6": func_six, "7": func_seven, "8": func_eight, "9": func_nine, '10': func_ten}
+                    SWITCH_DICT = {"a": func_q, "1": func_one, "2": func_two, "3": func_three, "4": func_four, "5": func_five, "6": func_six, "7": func_seven, "8": func_eight, "9": func_nine, '10': func_ten}
                     if user_input == "a":
                         SWITCH_DICT[user_input](ingredients, nutrition, methods)
                     else:

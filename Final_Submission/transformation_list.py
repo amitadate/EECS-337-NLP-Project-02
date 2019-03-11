@@ -201,14 +201,6 @@ to_vegan_list = {
     "chicken stock": "vegetable broth",
     "beef stock": "vegetable broth",
     "pork stock": "vegetable broth",
-    "chicken": "tofu",
-    "meat": "tofu",
-    "beef": "tempeh",
-    "veal": "tofu",
-    "lamb": "tempeh",
-    "bacon": "vegan bacon",
-    "steak": "seitan steak",
-    "turkey": "tofurky",
     "pepperoni": "tofurky deli slice",
     "pastrami": "tofurky deli slice",
     "salami": "tofurky deli slice",
@@ -225,6 +217,7 @@ to_vegan_list = {
     "chicken thigh": "seitan tenders",
     "chicken leg": "seitan tenders",
     "chicken nuggets": "seitan nuggets",
+    "chicken": "tofu",
     "pork": "tempeh",
     "jerky": "veggie jerky",
     "tuna": "tempeh",
@@ -240,8 +233,8 @@ to_vegan_list = {
     "calamari": "tempeh",
     "shrimp": "tofu",
     "prawn": "tofu",
-    "milk": "soy milk",
     "milk powder": "almond milk powder",
+    "milk": "soy milk",
     "ice cream": "soy ice cream",
     "mozzarella cheese": "vegan mozzarella cheese",
     "mozzarella": "vegan mozzarella",
@@ -267,7 +260,14 @@ to_vegan_list = {
     "bread": "wheat tortilla",
     "bread toasts": "wheat tortilla",
     "bagel": "vegan bagel",
-    "pancake": "vegan pancake"
+    "pancake": "vegan pancake",
+    "meat": "tofu",
+    "beef": "tempeh",
+    "veal": "tofu",
+    "lamb": "tempeh",
+    "bacon": "vegan bacon",
+    "steak": "seitan steak",
+    "turkey": "tofurky"
 }
 
 normal_to_chinese = {
