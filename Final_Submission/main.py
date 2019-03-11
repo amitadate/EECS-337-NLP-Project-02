@@ -1,8 +1,13 @@
 from url_srapper import getScrapedData
 from data_extractor import methods_tools_extracter, ingredients_extracter, nutrition_extracter
 from transformer import replace_instructions
+<< << << < HEAD
 from transformation_list import healthy, vegetarian, to_vegan_list, normal_to_chinese, x_to_indian, normal_to_indian_utensils, x_to_italian, x_to_mexican, normal_to_chinese_utensils, x_to_non_healthy, x_to_non_veg
 from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, UNITS, DESCRIPTOR, all_food
+== == == =
+from transformation_list import healthy, vegetarian, to_vegan_list, normal_to_chinese, x_to_indian, x_to_italian, x_to_mexican, normal_to_chinese_utensils, x_to_non_healthy, x_to_non_veg
+from extracter_list import PRIMARY_COOKING_METHODS, SECONDARY_COOKING_METHODS, TOOLS, UNITS, DESCRIPTOR
+from all_food import all_food
 
 
 def func_q(ingredients, nutrition, methods):
