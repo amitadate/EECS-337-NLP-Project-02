@@ -97,8 +97,8 @@ healthy = {
     "salt cod": "fresh cod",
     "salted butter": "unsalted butter",
     "salted mackerel": "fresh mackerel",
-    "lightly salted ": "",
-    "salted ": "",
+    "lightly salted": "",
+    "salted": "",
     "sauerkraut": "chopped cabbage",
     "sea salt": "sesame oil",
     "salt": "low-sodium salt substitute",
@@ -133,7 +133,8 @@ healthy = {
     "avocado": "cucumber slices",
     "margarine": "diet margarine",
     "cheddar cheese": "fat-free cheese",
-    "cheese": "low-fat cheese"
+    "cheese": "low-fat cheese",
+    'chilli powder': 'green chilli powder'
 }
 
 
@@ -167,8 +168,9 @@ vegetarian = {
     "chicken breast": "seitan tenders",
     "chicken leg": "seitan tenders",
     "chicken thigh": "seitan tenders",
-    "chicken": "soy patties",
     "chicken nuggets": "soy nuggets",
+    "chicken soup":"vegetable soup",
+    "chicken": "tofu",
     "jerky": "veggie jerky",
     "pork": "tempeh",
     "meat": "tofurky deli slice",
@@ -190,8 +192,8 @@ vegetarian = {
     "shrimp": "tofu",
     "prawn": "tofu",
     "gelatin": "agar flakes",
-    "chicken soup":"vegetable soup",
-    "fish": "soy"
+    "fish": "soy",
+    "crab": "tofu"
 }
 
 to_vegan_list = {
@@ -270,7 +272,8 @@ to_vegan_list = {
     "bacon": "vegan bacon",
     "steak": "seitan steak",
     "turkey": "tofurky",
-    "fish": "soy"
+    "fish": "soy",
+    "crab": "tofu"
 }
 
 normal_to_chinese = {
@@ -344,7 +347,7 @@ x_to_non_healthy = {
  'part-skim milk ricotta cheese': 'ricotta cheese',
  'cheese':'cheddar cheese',
  'oatmeal': 'granola',
- 'rice': 'white Rice',
+ 'rice': 'white rice',
  'almond flour': 'white flour',
  'flour':'white flour',
  'low-fat bologna': 'high-fat bologna',
@@ -436,7 +439,11 @@ x_to_non_healthy = {
  'cucumber slices': 'avocado',
  'diet margarine': 'margarine',
  'low-fat cheese': 'high-fat cheese',
- 'sweet potatoes':'potatoes'
+ 'sweet potatoes':'potatoes', 
+ 'zucchini':'potatoes',
+ 'carrots':'glazed carrots',
+ 'carrot':'glazed carrot',
+ 'chilli powder': 'red chilli powder'
  }
 
 x_to_indian = {
