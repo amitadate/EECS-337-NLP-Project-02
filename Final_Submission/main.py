@@ -233,6 +233,7 @@ def main():
     flag = 1
     while flag == 1:
         url = ""
+        print('\n')
         print(' Enter the URL of the Recipie or Enter " EXIT " to exit the Menu ')
         print('--------------------------------')
         url = input()

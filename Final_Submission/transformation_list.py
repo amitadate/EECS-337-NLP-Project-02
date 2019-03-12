@@ -1,5 +1,6 @@
 healthy = {
     "vegetable oil": "olive oil",
+    "potato": "zucchini",
     "canola oil": "olive oil",
     "olive oil": "olive oil",
     "peanut oil": "olive oil",
@@ -26,6 +27,7 @@ healthy = {
     "granola": "oatmeal",
     "coffee cream": "low-fat milk",
     "ramen noodles": "rice",
+    "almond flour": "almond flour",
     "flour": "almond flour",
     "bologna": "low-fat bologna",
     "sausage": "lean ham",
@@ -516,6 +518,7 @@ x_to_indian = {
     "meat": "mutton",
     "lamb": "lamb broth",
     "maple sauce" : " chutney",
+    "worcestershire sauce" : "tamarind chutney",
     "soy sauce" : "chutney",
     "barbeque sauce" : "chutney",
     "marinara sauce" : "mango chutney",
