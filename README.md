@@ -67,9 +67,10 @@ Below is the list our parser recognizes:
  3) Transform to Vegetarain
  4) Transform to Non-Vegetarian
  5) Transform to Vegan
- 6) Transform to Chinese
- 7) Transform to Mexican
- 8) Transform to Indian
+ 6) Transform to Chinese (Includes Chinese Utensils)
+ 7) Transform to Indian (Includes Indian Utensils)
+ 8) Transform to Mexican 
+ 
  9) Transform to Italian
 
 The code for this section can be found in **Final_Submission-> transformer.py**
