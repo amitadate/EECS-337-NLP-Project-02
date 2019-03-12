@@ -56,7 +56,7 @@ Bekow is the list our parser recognizes:
   Tools – pans, graters, whisks, etc.
   Steps – parse the directions into a series of steps that each consist of ingredients, tools, methods, and times
   
-  the code for this section can be found in **Final_Submission-> data_extractor.py**
+  The code for this section can be found in **Final_Submission-> data_extractor.py**
 
  ## Transformations
  
@@ -69,3 +69,6 @@ Bekow is the list our parser recognizes:
  7) Transform to Mexican
  8) Transform to Indian
  9) Transform to Italian
+
+The code for this section can be found in **Final_Submission-> transformer.py**
+
