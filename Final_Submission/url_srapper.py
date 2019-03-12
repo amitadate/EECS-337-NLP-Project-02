@@ -12,6 +12,5 @@ def getScrapedData(url):
     recepie_all_data["nutrition"]["carbohydrateContent"] = tree.xpath('//span[@itemprop="carbohydrateContent"]/text()')
     recepie_all_data["nutrition"]["calories"] = tree.xpath('//span[@itemprop="calories"]/text()')
     recepie_all_data["nutrition"]["proteinContent"] = tree.xpath('//span[@itemprop="proteinContent"]/text()')
-    recepie_all_data["nutrition"]["cholesterolContent"] = tree.xpath('//span[@itemprop="cholesterolContent"]/text()')
     recepie_all_data["nutrition"]["sodiumContent"] = tree.xpath('//span[@itemprop="sodiumContent"]/text()')
     return recepie_all_data

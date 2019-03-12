@@ -29,7 +29,8 @@ def methods_tools_extracter(directions, PRIMARY_COOKING_METHODS, SECONDARY_COOKI
                         method[j]["Secondary method"].append(cur_word) 
                     step = step + cur_word + " "
                 elif cur_word in TOOLS:
-                    method[j]["Tools"].append(cur_word)
+                    if cur_word not in method[j]["Tools"]:
+                        method[j]["Tools"].append(cur_word) 
                     step = step + " in " + cur_word + " "
                 elif is_number(cur_word):
                     num = cur_word
@@ -96,7 +97,6 @@ def nutrition_extracter(nutrition):
     carbs = float(nutrition['nutrition']['carbohydrateContent'][0])
     calories = float(nutrition['nutrition']['calories'][0])
     protein = float(nutrition['nutrition']['proteinContent'][0])
-    choles = float(nutrition['nutrition']['cholesterolContent'][0])
     sodium = float(nutrition['nutrition']['sodiumContent'][0])
     
     fat_cal = fat_content*9
