@@ -18,7 +18,7 @@ Note - In the menu, scroll up to see results displayed or use terminal in fullsc
 
 ## Transformations
 
-a) ----> To view scraped data, Ingridients, Nutrition and Methods
+0) ----> To view scraped data, Ingridients, Nutrition and Methods
 
 1) ----> Transform to Healthy
 
@@ -37,3 +37,7 @@ a) ----> To view scraped data, Ingridients, Nutrition and Methods
 8) ----> Transform to Indian
 
 9) ----> Transform to Italian
+
+## Description
+
+Firstly, we started with Exploratory Data Analsis of most common ingredients used in top recipes of the world. The code for this purpose can be found in Final_Submission-> PreProcessing. Using the PreProcessing statistics, we created the list of most common ingredients  and their substitution found in healthy, non healthy, veg, non-veg recipes, chinese, indian, mexican, and itlian recipes.
