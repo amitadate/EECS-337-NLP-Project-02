@@ -60,6 +60,8 @@ Bekow is the list our parser recognizes:
 
  ## Transformations
  
+ We have given the below otions to a user to choose from:
+ 
  1) Transform to Healthy
  2) Transform to Non-Healthy
  3) Transform to Vegetarain
