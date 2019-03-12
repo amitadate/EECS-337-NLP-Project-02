@@ -314,7 +314,7 @@ normal_to_chinese = {
     "tea": "chinese tea",
     "sausage": "lap ceung",
     "salsa" : "mala sauce",
-    "maple suace" : "mala sauce",
+    "maple sauce" : "mala sauce",
     "maple syrup" : "chinese mala syrup"
 }
 
@@ -442,6 +442,9 @@ x_to_non_healthy = {
  }
 
 x_to_indian = {
+    "salsa" : "tomato chutney",
+    "meat" : "chicken"
+    "sushi " : "indian sushi"
     'beef': 'chicken',
     'steak': 'chicken',
     'pork': 'lamb',
@@ -457,6 +460,8 @@ x_to_indian = {
     "corn oil": "sunflower oil",
     "sunflower oil": "sunflower oil",
     "safflower oil": "sunflower oil",
+    "sesame oil" : "sunflower oil",
+    "coconut oil" : "sunflower oil",
     'oil':"sunflower oil",
     "spaghetti pasta": "indian maida pasta",
     "spaghetti": "indian maida",
@@ -476,12 +481,20 @@ x_to_indian = {
     "chicken nuggets": "tandoori chicken balls",
     "meat": "mutton",
     "lamb": "lamb broth",
+    "maple sauce" : " chutney",
+    "soy sauce" : "chutney",
+    "barbeque sauce" : "chutney",
+    "marinara sauce" : "mango chutney"
     "sauce": "chutney",
     "tofu": "paneer",
     "rice": "indian basmati rice",
     "russet potatoes" : "red potatoes",
     "butter" : "amul butter",
-    "milk" : "amul milk"
+    "coconut milk" : "amul milk",
+    "soy milk" : "amul milk",
+    "almond milk" : "amul milk"
+    "milk" : "amul milk",
+    "zucchini” : “sweet potatoes”
 }
 
 
@@ -530,6 +543,8 @@ normal_to_indian_utensils = {
     "pot": "indian pot (kadai)",
     "steamers": "bamboo steamers",
     "skillet": "indian pan (kadai)"
+    "rice pressure cooker": "prestige aluminium pressure cooker"
+    "cooker" : "prestige aluminium cooker"
 }
 
 x_to_italian = {
