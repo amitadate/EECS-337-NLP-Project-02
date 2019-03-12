@@ -441,7 +441,7 @@ x_to_non_healthy = {
  'cucumber slices': 'avocado',
  'diet margarine': 'margarine',
  'low-fat cheese': 'high-fat cheese',
- 'sweet potatoes':'potatoes', 
+ 'sweet potatoes':'potatoes',
  'zucchini':'potatoes',
  'carrots':'glazed carrots',
  'carrot':'glazed carrot',
@@ -510,7 +510,7 @@ x_to_mexican = {
     'steak': 'carnitas',
     'fish': 'chicken',
     'bread': 'tortilla',
-    'potatoes': 'refried beans',
+    'potatoes': 'pinto beans',
     'basil': 'cilantro',
     'parsley': 'cilantro',
     'bell pepper': 'chili pepper',
@@ -537,6 +537,14 @@ x_to_mexican = {
     'olives': 'jalapenos',
     "butter":"compound butter",
     "spinach":"mexican spinach"
+    "sweet potato" : "refried beans",
+    "potato" : "pinto bean",
+    "maple sauce" : " sweet salsa",
+    "soy sauce" : "soy salsa",
+    "barbeque sauce" : "spicy salsa",
+    "marinara sauce" : "salsa",
+    "sauce": "salsa"
+
 
 }
 
@@ -549,8 +557,8 @@ normal_to_indian_utensils = {
     "ladle": "indian ladle (degchi)",
     "pot": "indian pot (kadai)",
     "steamers": "bamboo steamers",
-    "skillet": "indian pan (kadai)"
-    "rice pressure cooker": "prestige aluminium pressure cooker"
+    "skillet": "indian pan (kadai)",
+    "rice pressure cooker": "prestige aluminium pressure cooker",
     "cooker" : "prestige aluminium cooker"
 }
 
