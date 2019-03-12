@@ -44,11 +44,13 @@ Firstly, we started with Exploratory Data Analsis of most common ingredients use
 
 ## Ingredients, Nutritions, and Methods
 
-  Ingredients - name , quantity , measurement (cup, teaspoon, pinch, etc.) , descriptors
+Bekow are the things our parser recognizes:
+
+  **Ingredients** - name , quantity , measurement (cup, teaspoon, pinch, etc.) , descriptors
   
-  Nutritions
+  **Nutritions** - Protein, Carbs, Sodium into High, low, normal
   
-  Methods:
+  **Methods**:
   Primary cooking method (e.g. sauté, broil, boil, poach, etc.)
   Secondary cooking method (e.g. chop, grate, stir, shake, mince, crush, squeeze, etc.)
   Tools – pans, graters, whisks, etc.
