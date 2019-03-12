@@ -16,7 +16,7 @@ Repository for projects undertaken in the course ' Natural Language Processing '
 
 Note - In the menu, scroll up to see results displayed or use terminal in fullscreen mode
 
-## Transformations
+## Menu
 
 0) ----> To view scraped data, Ingridients, Nutrition and Methods
 
