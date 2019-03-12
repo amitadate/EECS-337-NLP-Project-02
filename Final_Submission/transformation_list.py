@@ -312,20 +312,22 @@ normal_to_chinese = {
     "corn": "bok choy",
     "ice cream": "baobing",
     "tea": "chinese tea",
-    "sausage": "lap ceung"
+    "sausage": "lap ceung",
+    "salsa" : "mala sauce",
+    "maple suace" : "mala sauce",
+    "maple syrup" : "chinese mala syrup"
 }
 
 normal_to_chinese_utensils = {
     "fork": "chopsticks",
     "frying pan": "wok",
     "pan": "wok",
-    "rice cooker": "Donabe",
-    "cooker": "Donabe",
+    "rice cooker": "donabe",
+    "cooker": "donabe",
     "spatula": "chuan",
     "ladle": "hoak",
     "pot": "wok",
-    "steamers": "Bamboo steamers",
-    "skillet": "wok"
+    "steamers": "bamboo steamers"
 }
 
 
