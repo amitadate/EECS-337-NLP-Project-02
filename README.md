@@ -42,32 +42,3 @@ Note - In the menu, scroll up to see results displayed or use terminal in fullsc
 
 Firstly, we started with Exploratory Data Analsis of most common ingredients used in top recipes of the world. The code for this purpose can be found in **Final_Submission-> PreProcessing**. Using the PreProcessing statistics, we created the list of most common ingredients  and their substitution found in healthy, non healthy, veg, non-veg recipes, chinese, indian, mexican, and itlian recipes.
 
-
-/proc/self/
-|-- attr
-|-- cwd -> /proc
-|-- fd
-|   `-- 3 -> /proc/15589/fd
-|-- fdinfo
-|-- net
-|   |-- dev_snmp6
-|   |-- netfilter
-|   |-- rpc
-|   |   |-- auth.rpcsec.context
-|   |   |-- auth.rpcsec.init
-|   |   |-- auth.unix.gid
-|   |   |-- auth.unix.ip
-|   |   |-- nfs4.idtoname
-|   |   |-- nfs4.nametoid
-|   |   |-- nfsd.export
-|   |   `-- nfsd.fh
-|   `-- stat
-|-- root -> /
-`-- task
-    `-- 15589
-        |-- attr
-        |-- cwd -> /proc
-        |-- fd
-        | `-- 3 -> /proc/15589/task/15589/fd
-        |-- fdinfo
-        `-- root -> /
