@@ -60,7 +60,7 @@ Below is the list our parser recognizes:
 
  ## Transformations
  
- We have given below otions to a user to choose from:
+ We have given the following options to a user to choose from:
  
  1) Transform to Healthy
  2) Transform to Non-Healthy
@@ -70,7 +70,6 @@ Below is the list our parser recognizes:
  6) Transform to Chinese (Includes Chinese Utensils)
  7) Transform to Indian (Includes Indian Utensils)
  8) Transform to Mexican 
- 
  9) Transform to Italian
 
 The code for this section can be found in **Final_Submission-> transformer.py**
