@@ -1,5 +1,19 @@
 healthy = {
+    "vegetable oil": "olive oil",
+    "canola oil": "olive oil",
+    "olive oil": "olive oil",
+    "peanut oil": "olive oil",
+    "coconut oil": "olive oil",
+    "corn oil": "olive oil",
+    "sunflower oil": "olive oil",
+    "safflower oil": "olive oil",
+    "sesame oil" : "olive oil",
+    "coconut oil" : "olive oil",
+    'oil':"olive oil",
     "whole milk": "low-fat milk",
+    "coconut milk" : "almond milk",
+    "soy milk" : "almond milk",
+    "almond milk" : "almond milk",
     "ice cream": "low-fat frozen yoghurt",
     "whipping cream": "imitation whipped cream(made with skimmed milk)",
     "whipped cream": "imitation whipped cream(made with skimmed milk)",
@@ -357,6 +371,17 @@ x_to_non_healthy = {
  'lean ham': 'sausage',
  'coconut oil': 'mustard oil',
  'olive oil':'mustard oil',
+ "vegetable oil": "mustard oil",
+    "canola oil": "mustard oil",
+    "olive oil": "mustard oil",
+    "peanut oil": "mustard oil",
+    "coconut oil": "mustard oil",
+    "corn oil": "mustard oil",
+    "sunflower oil": "mustard oil",
+    "safflower oil": "mustard oil",
+    "sesame oil" : "mustard oil",
+    "coconut oil" : "mustard oil",
+    'oil':"mustard oil",
  'oil': 'mustard oil',
  'lettuce leaves': 'cheese tortilla',
  'cauliflower rice': 'white rice',
@@ -450,8 +475,8 @@ x_to_non_healthy = {
 
 x_to_indian = {
     "salsa" : "tomato chutney",
-    "meat" : "chicken"
-    "sushi " : "indian sushi"
+    "meat" : "chicken",
+    "sushi " : "indian sushi",
     'beef': 'chicken',
     'steak': 'chicken',
     'pork': 'lamb',
@@ -491,7 +516,7 @@ x_to_indian = {
     "maple sauce" : " chutney",
     "soy sauce" : "chutney",
     "barbeque sauce" : "chutney",
-    "marinara sauce" : "mango chutney"
+    "marinara sauce" : "mango chutney",
     "sauce": "chutney",
     "tofu": "paneer",
     "rice": "indian basmati rice",
@@ -499,9 +524,9 @@ x_to_indian = {
     "butter" : "amul butter",
     "coconut milk" : "amul milk",
     "soy milk" : "amul milk",
-    "almond milk" : "amul milk"
+    "almond milk" : "amul milk",
     "milk" : "amul milk",
-    "zucchini” : “sweet potatoes”
+    "zucchini" : "sweet potatoes"
 }
 
 
@@ -604,6 +629,7 @@ x_to_non_veg = {
     'veg soup':'chicken soup',
     'vegetable soup':'chicken soup',
     'potatoes':'chicken cubes',
+    'rice cooker':'rice cooker',
     'rice':'chicken rice',
     'pizza':'pepporoni pizza'
  }
