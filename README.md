@@ -44,7 +44,7 @@ Firstly, we started with Exploratory Data Analsis of most common ingredients use
 
 ## Ingredients, Nutritions, and Methods
 
-Bekow are the things our parser recognizes:
+Bekow is the list our parser recognizes:
 
   **Ingredients** - name , quantity , measurement (cup, teaspoon, pinch, etc.) , descriptors
   
