@@ -40,7 +40,7 @@ Note - In the menu, scroll up to see results displayed or use terminal in fullsc
 
 ## Preprocessing
 
-Firstly, we started with Exploratory Data Analsis of most common ingredients used in top recipes of the world. The code for this purpose can be found in **Final_Submission-> PreProcessing**. Using the PreProcessing statistics, we created the list of most common ingredients  and their substitution found in healthy, non healthy, veg, non-veg recipes, chinese, indian, mexican, and itlian recipes.
+Firstly, we started with Exploratory Data Analsis of most common ingredients used in top recipes of the world. The code for this purpose can be found in **Final_Submission-> PreProcessing**. Using the PreProcessing statistics, we created the list of most common ingredients  and their substitution found in healthy, non healthy, veg, non-veg recipes, Chinese, Indian, Mexican, and Italian recipes.
 
 ## Ingredients, Nutritions, and Methods
 
