@@ -42,3 +42,14 @@ Note - In the menu, scroll up to see results displayed or use terminal in fullsc
 
 Firstly, we started with Exploratory Data Analsis of most common ingredients used in top recipes of the world. The code for this purpose can be found in **Final_Submission-> PreProcessing**. Using the PreProcessing statistics, we created the list of most common ingredients  and their substitution found in healthy, non healthy, veg, non-veg recipes, chinese, indian, mexican, and itlian recipes.
 
+## Ingredients, Nutritions, and Methods
+
+  Ingredients - name , quantity , measurement (cup, teaspoon, pinch, etc.) , descriptors
+  
+  Nutritions
+  
+  Methods:
+  Primary cooking method (e.g. sauté, broil, boil, poach, etc.)
+  Secondary cooking method (e.g. chop, grate, stir, shake, mince, crush, squeeze, etc.)
+  Tools – pans, graters, whisks, etc.
+  Steps – parse the directions into a series of steps that each consist of ingredients, tools, methods, and times
