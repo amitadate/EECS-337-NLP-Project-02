@@ -55,3 +55,5 @@ Bekow is the list our parser recognizes:
   Secondary cooking method (e.g. chop, grate, stir, shake, mince, crush, squeeze, etc.)
   Tools – pans, graters, whisks, etc.
   Steps – parse the directions into a series of steps that each consist of ingredients, tools, methods, and times
+  
+  the code for this section can be found in **Final_Submission-> data_extractor.py**
