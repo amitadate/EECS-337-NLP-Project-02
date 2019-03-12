@@ -57,3 +57,15 @@ Bekow is the list our parser recognizes:
   Steps – parse the directions into a series of steps that each consist of ingredients, tools, methods, and times
   
   the code for this section can be found in **Final_Submission-> data_extractor.py**
+
+ ## Transformations
+ 
+ 1) Transform to Healthy
+ 2) Transform to Non-Healthy
+ 3) Transform to Vegetarain
+ 4) Transform to Non-Vegetarian
+ 5) Transform to Vegan
+ 6) Transform to Chinese
+ 7) Transform to Mexican
+ 8) Transform to Indian
+ 9) Transform to Italian
