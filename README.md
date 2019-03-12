@@ -32,9 +32,9 @@ Note - In the menu, scroll up to see results displayed or use terminal in fullsc
 
 6) ----> Transform to Chinese
 
-7) ----> Transform to Mexican
+7) ----> Transform to Indian
 
-8) ----> Transform to Indian
+8) ----> Transform to Mexican
 
 9) ----> Transform to Italian
 
